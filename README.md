@@ -1,5 +1,63 @@
 # Unautomated Home Page
 
+## Changelog & Section Details
+
+This changelog summarizes the major updates and the structure of the landing page, with details for each section:
+
+### Hero Section
+- Eye-catching headline with gradient text and a call-to-action.
+- Subheadline explains the value proposition.
+- Buttons for "Analyze My Career Free" and "See How It Works".
+- Features quick overview (Instant Analysis, Future Strategies, Expert Insights) with icons.
+
+### Benefits Section
+- Three-column layout highlighting:
+  - Privacy First (shield icon): All analysis is local, no resume stored.
+  - Resume Intelligence (brain icon): AI-powered resume scanning.
+  - Structured Report (document icon): Output includes risk, reasoning, and references.
+- Updated to use SVG icons for a modern look.
+
+### How It Works Section
+- Three-step process in card layout:
+  - Step 1: Upload Resume (upload icon)
+  - Step 2: AI Analyzes It (search icon, "Free" badge)
+  - Step 3: Receive Risk Report (document icon, "Paid" badge)
+- Responsive, visually engaging, and clear.
+
+### Feature Showcase
+- Two-column layout:
+  - Left: List of four features (chevron icons, bolded titles, descriptions)
+  - Right: Card with brain icon, "Powerful AI Engine" heading, description, and stat boxes (90% skill extraction, 85% risk assessment)
+- Emphasizes AI credibility and privacy.
+
+### User Testimonial Section
+- Headline and subheadline centered.
+- Three testimonial cards with colored initials, italicized quotes, bold names, and roles.
+- Summary line: "50+ resumes analyzed so far".
+- Modern card style with shadow and rounded corners.
+
+### FAQ Section
+- Centered heading and subheading.
+- Interactive accordion for questions/answers (only one open at a time).
+- Clean, minimal design with dividers.
+- JavaScript for accordion functionality.
+
+### Snackbar / Toast Notification
+- Bottom-center notification to create urgency (e.g., "A user from <city> just analyzed a resume").
+- Light green color, small size, auto-hides after a few seconds, cycles through random cities.
+- JavaScript for randomization and timing.
+
+### SEO & Accessibility
+- Meta tags for SEO, Open Graph, Twitter Card.
+- Sitemap.xml and robots.txt present and referenced.
+- Semantic HTML and accessibility best practices.
+
+### Removed Sections
+- Pricing Plans section removed for simplicity.
+- User Showcase / Community Gallery section removed.
+
+---
+
 This is the landing page for Unautomated, hosted at unautomated.xyz.
 
 ## Overview
