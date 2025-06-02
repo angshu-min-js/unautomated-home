@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Unautomated Home Plugin",
+  "name_for_model": "unautomated_home",
+  "description_for_human": "Query public project data from the Unautomated landing page.",
+  "description_for_model": "Get public project information from the Unautomated landing page.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://unautomated.xyz/openapi.json"
+  },
+  "logo_url": "https://unautomated.xyz/logo.png",
+  "contact_email": "qloudai.app@gmail.com",
+  "legal_info_url": "https://unautomated.xyz/terms"
+} 
