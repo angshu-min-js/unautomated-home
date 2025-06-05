@@ -155,7 +155,19 @@
 
     <!-- Benefits Overview Section -->
     <section class="py-16 bg-blue-50">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="flex justify-center mb-4">
+                    <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100">
+                        <!-- Shield Check Icon -->
+                        <svg class="h-8 w-8 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2">No Login Required</h3>
+                <p class="text-gray-600">Start immediately without creating accounts or sharing personal information. Upload, analyze, and get results in complete privacy.</p>
+            </div>
             <div>
                 <div class="flex justify-center mb-4">
                     <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100">
@@ -525,6 +537,15 @@
                         It provides a detailed report about which part of your job will be automated and what should you do about it. You'll receive a personalized course plan with specific action items, upskilling recommendations, and a clear path to increase your salary while staying ahead of automation. <a href="https://drive.google.com/file/d/1A2JCrNAqZWRcKlKp5p3Syh4SuN19S3sM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">View example report</a> for <a href="https://angshumangupta.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Angshuman Gupta</a>.
                     </div>
                 </div>
+                <div class="py-6 cursor-pointer" onclick="toggleFaq(5)">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-900">Do I need to create an account or login?</span>
+                        <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-5">
+                        No login required! Simply upload your resume and get instant results. No account creation, no personal information needed, and no email signup required.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -586,7 +607,7 @@
     <script>
         let openFaq = null;
         function toggleFaq(idx) {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 6; i++) {
                 const answer = document.getElementById('faq-answer-' + i);
                 const icon = document.getElementById('faq-icon-' + i);
                 if (i === idx) {
