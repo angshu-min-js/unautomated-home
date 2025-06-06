@@ -126,10 +126,14 @@
                     </div>
                     <h3 class="font-semibold text-gray-900 mb-2">Marketing Manager</h3>
                     <p class="text-xl font-bold text-red-600 mb-1">High Automation Risk</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                        <div class="progress-bar bg-red-600 h-2 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="78%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">Automation Risk: 78%</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <svg class="h-8 w-8 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                             <line x1="16" y1="2" x2="16" y2="6"/>
                             <line x1="8" y1="2" x2="8" y2="6"/>
@@ -137,17 +141,25 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-gray-900 mb-2">Financial Analyst</h3>
-                    <p class="text-xl font-bold text-orange-600 mb-1">High Automation Risk</p>
+                    <p class="text-xl font-bold text-red-600 mb-1">High Automation Risk</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                        <div class="progress-bar bg-red-600 h-2 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="75%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">Automation Risk: 75%</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <svg class="h-8 w-8 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-yellow-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="16,18 22,12 16,6"/>
                             <polyline points="8,6 2,12 8,18"/>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Software Developer</h3>
-                    <p class="text-xl font-bold text-green-600 mb-1">Medium Automation Risk</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">Software Development Engineer</h3>
+                    <p class="text-xl font-bold text-yellow-600 mb-1">Medium Automation Risk</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                        <div class="progress-bar bg-yellow-600 h-2 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="55%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">Automation Risk: 55%</p>
                 </div>
             </div>
         </div>
@@ -888,6 +900,27 @@
           const mobileMenuLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
           mobileMenuLinks.forEach(link => {
             link.addEventListener('click', closeMobileMenu);
+          });
+
+          // Animate progress bars when they come into view
+          const progressBars = document.querySelectorAll('.progress-bar');
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetWidth = bar.getAttribute('data-width');
+                // Start from 0 and animate to target width
+                bar.style.width = '0%';
+                setTimeout(() => {
+                  bar.style.width = targetWidth;
+                }, 100);
+                observer.unobserve(bar);
+              }
+            });
+          }, { threshold: 0.5 });
+
+          progressBars.forEach(bar => {
+            observer.observe(bar);
           });
         });
     </script>
