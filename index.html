@@ -51,8 +51,8 @@
         posthog.init('phc_Csp1qp1fhice0M5OGyUPZJQgEUxlJnTyC8E1k15u1IV', {
             api_host: 'https://eu.i.posthog.com',
             loaded: function(posthog) {
-                posthog.capture('page_view', {
-                    page: 'landing_page',
+                posthog.capture('Home', {
+                    page: 'Homepage',
                     timestamp: new Date().toISOString()
                 });
             },
