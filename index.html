@@ -716,11 +716,11 @@
                 </div>
                 <div class="py-6 cursor-pointer" onclick="toggleFaq(1)">
                     <div class="flex justify-between items-center">
-                        <span class="text-lg font-semibold text-gray-900">Is my resume stored?</span>
+                        <span class="text-lg font-semibold text-gray-900">Is my data safe and is my resume stored?</span>
                         <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                     </div>
                     <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-1">
-                        No. For free analysis, all processing happens locally on your device. For paid reports, processing happens securely in the cloud but nothing is stored. Your privacy is our top priority.
+                        Yes, your privacy is our top priority. We use client-side analysis, meaning your resume is processed directly in your browser and never sent to our servers for the initial analysis. We collect email address (if you provide it) as part of analytics to determine user uniqueness but nothing beyond that. For detailed reports, we use secure, privacy-focused APIs. Your resume is <strong>not stored</strong> on our servers.
                     </div>
                 </div>
                 <div class="py-6 cursor-pointer" onclick="toggleFaq(2)">
@@ -734,11 +734,11 @@
                 </div>
                 <div class="py-6 cursor-pointer" onclick="toggleFaq(3)">
                     <div class="flex justify-between items-center">
-                        <span class="text-lg font-semibold text-gray-900">How is automation risk determined?</span>
+                        <span class="text-lg font-semibold text-gray-900">How is automation risk determined and how accurate is the risk assessment?</span>
                         <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                     </div>
                     <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-3">
-                        We combine job data, tools, and AI productivity benchmarks with our proprietary knowledge and deep expertise in tech & AI. Our analysis is powered by industry insights from working directly in the technology sector.
+                        We combine job data, tools, and AI productivity benchmarks with our proprietary knowledge and deep expertise in tech & AI. Our AI is trained on vast synthetic datasets of job roles, skills, and automation trends. While it provides a highly educated estimate, it should be used as a guide for career planning, not as an absolute prediction.
                     </div>
                 </div>
                 <div class="py-6 cursor-pointer" onclick="toggleFaq(4)">
@@ -766,6 +766,35 @@
                     </div>
                     <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-6">
                         No login required! Simply upload your resume and get instant results. No account creation, no personal information needed, and no email signup required.
+                    </div>
+                </div>
+                <div class="py-6 cursor-pointer" onclick="toggleFaq(7)">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-900">What models do you use for analysis?</span>
+                        <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-7">
+                        We use a combination of state-of-the-art small and large language models to deliver fast, accurate, and secure analysis. On desktop devices, we run advanced on-device models like Llama 3.2 and Gemma 2 for the initial free analysis, providing instant results while ensuring complete data privacy. For more detailed, in-depth reports—available as part of our paid offering—we use powerful cloud-based models such as Gemini. These advanced models support both desktop and mobile platforms, enabling deeper insights and enhanced accuracy when needed.
+                    </div>
+                </div>
+                <!--
+                <div class="py-6 cursor-pointer" onclick="toggleFaq(8)">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-900">Is my data safe?</span>
+                        <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-8">
+                        Yes, your privacy is our top priority. We use client-side analysis, meaning your resume is processed directly in your browser and never sent to our servers for the initial analysis. We collect email address (if its part of the resume) as part of analytics but nothing beyond that. For detailed reports, we use secure, privacy-focused APIs.
+                    </div>
+                </div>
+                -->
+                <div class="py-6 cursor-pointer" onclick="toggleFaq(8)">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-900">Can I use this for any profession?</span>
+                        <svg class="w-6 h-6 text-gray-500 transition-transform duration-200" id="faq-icon-9" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="mt-2 text-gray-700 text-base hidden" id="faq-answer-8">
+                        Yes, our tool is trained to analyze a wide range of professions across various industries. The more detail your resume provides about your tasks and responsibilities, the more accurate the analysis will be.
                     </div>
                 </div>
             </div>
@@ -829,7 +858,7 @@
     <script>
         let openFaq = null;
         function toggleFaq(idx) {
-            for (let i = 0; i < 7; i++) {
+            for (let i = 0; i < 9; i++) {
                 const answer = document.getElementById('faq-answer-' + i);
                 const icon = document.getElementById('faq-icon-' + i);
                 if (i === idx) {
