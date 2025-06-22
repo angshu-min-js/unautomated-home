@@ -1,0 +1,126 @@
+# Unautomated
+
+Unautomated Platform Overview
+-----------------------------
+
+Unautomated (https://unautomated.xyz) is an AI-powered career automation risk analysis platform designed for professionals who want to future-proof their careers in the age of artificial intelligence. The platform provides instant, privacy-first resume analysis to assess career vulnerability and delivers actionable insights for professional development and career strategy planning.
+
+## Core Platform Features
+
+### AI-Powered Analysis Engine
+- **Resume Intelligence**: Advanced AI-powered resume scanning with 90% skill extraction accuracy
+- **Risk Assessment**: Comprehensive automation risk evaluation with 85% assessment accuracy  
+- **Career Vulnerability Analysis**: Detailed assessment of job automation susceptibility across industries
+- **Future-Proofing Strategies**: Personalized recommendations for career development and skill enhancement
+
+### Privacy & Security
+- **No Login Required**: Instant access without account creation or personal data sharing
+- **Local Analysis**: All resume processing happens locally with no data storage or retention
+- **Privacy First**: Complete anonymity with no tracking of personal career information
+- **Secure Processing**: End-to-end secure analysis pipeline protecting sensitive career data
+
+### Report Generation
+- **Instant Analysis**: Real-time processing and immediate results delivery
+- **Structured Reports**: Comprehensive output including risk levels, reasoning, and actionable recommendations
+- **Risk Categorization**: Clear classification of automation risk (High/Medium/Low) with detailed explanations
+- **Professional Insights**: Expert-level analysis with industry-specific guidance and career development paths
+
+## Platform Navigation Structure
+
+### Main Navigation Links
+- `/` - Homepage with career risk analysis overview and call-to-action
+- `/#about` - Platform introduction and AI automation risk explanation
+- `/#how-it-works` - Three-step process: Upload Resume → AI Analysis → Risk Report
+- `/#faq` - Frequently asked questions about automation risk and career planning
+- `https://app.unautomated.xyz` - Main application for resume analysis and risk assessment
+
+### Career Risk Examples
+The platform demonstrates automation risk across various professions:
+- **Marketing Manager**: High Automation Risk (78% vulnerability)
+- **Financial Analyst**: High Automation Risk (75% vulnerability) 
+- **Software Development Engineer**: Medium Automation Risk (55% vulnerability)
+- **Sales Representatives**: Risk analysis with industry-specific insights
+- **Content Writers**: AI impact assessment and adaptation strategies
+- **Data Analysts**: Automation trends and future-proofing recommendations
+
+## API & Integration Capabilities
+
+### Public API Endpoints
+- `/api/projects.json` - Public project data for LLM/ChatGPT plugin integration
+- `/api/openapi.json` - Complete OpenAPI specification for public endpoints
+- `/api/ai-plugin.json` - ChatGPT plugin manifest for AI assistant integration
+
+### LLM Integration Features
+- **ChatGPT Plugin Support**: Native integration with ChatGPT for career risk queries
+- **No Authentication Required**: Open access to public project information
+- **Structured Data Access**: JSON-formatted responses for programmatic access
+- **AI Assistant Compatibility**: Designed for seamless integration with AI tools and assistants
+
+## Technical Infrastructure
+
+### SEO & Discovery
+- **Search Engine Optimization**: Comprehensive meta tags, Open Graph, and Twitter Card support
+- **Sitemap Configuration**: `/sitemap.xml` with proper URL structure and crawling priorities
+- **Robots.txt**: `/robots.txt` with crawler permissions and sitemap references
+- **Structured Data**: Schema markup for enhanced search engine understanding
+
+### Analytics & Tracking
+- **Google Analytics**: Comprehensive user behavior tracking and conversion monitoring
+- **PostHog Analytics**: Advanced event tracking for user engagement analysis
+- **Performance Monitoring**: Real-time analytics for platform optimization and user experience improvement
+
+### Deployment & Hosting
+- **GitHub Pages Integration**: Automated deployment pipeline for continuous integration
+- **Custom Domain Support**: `unautomated.xyz` with CNAME configuration
+- **CDN Optimization**: Fast global content delivery through optimized hosting infrastructure
+
+## User Experience & Design
+
+### Responsive Design
+- **Mobile-First Approach**: Optimized for all device types and screen sizes
+- **Modern UI/UX**: Clean, professional design with intuitive user flow
+- **Accessibility Compliance**: WCAG guidelines adherence for inclusive user experience
+- **Performance Optimized**: Fast loading times with minimal dependencies
+
+### Conversion Flow
+- **Landing Page Optimization**: Hero section with clear value proposition and risk demonstration
+- **Social Proof Integration**: User testimonials and success stories for credibility
+- **Clear Call-to-Actions**: Strategic placement of analysis buttons and conversion elements
+- **Trust Building**: Privacy guarantees, no-login requirements, and transparent process explanation
+
+## Content & Marketing
+
+### Educational Resources
+- **Career Risk Education**: Comprehensive information about AI automation impact on jobs
+- **Industry-Specific Guidance**: Tailored advice for different professional sectors
+- **Future-Proofing Strategies**: Actionable recommendations for career development
+- **FAQ Section**: Common questions about automation risk and career planning
+
+### Promotional Features
+- **Free Analysis Offering**: Currently promoting detailed reports at no cost (normally $5)
+- **Risk Assessment Examples**: Real-world examples of automation risk across professions
+- **Urgency Messaging**: Time-sensitive notifications about career automation trends
+- **Social Validation**: Community engagement indicators and usage statistics
+
+## Target Audience & Use Cases
+
+### Primary Users
+- **Mid-Career Professionals**: Individuals seeking career stability and growth in AI era
+- **Career Changers**: Professionals considering industry transitions due to automation concerns  
+- **Students & Graduates**: Early-career individuals planning future-proof career paths
+- **HR Professionals**: Recruiters and HR teams assessing workforce automation impact
+
+### Industry Applications
+- **Technology Sector**: Software developers, IT professionals, and tech workers
+- **Financial Services**: Analysts, advisors, and financial sector professionals
+- **Marketing & Sales**: Digital marketers, sales representatives, and communication professionals
+- **Administrative Roles**: Office workers, coordinators, and administrative professionals
+
+## Contact & Platform Information
+
+Qloud AI Products | 2025
+Email: qloudai.app@gmail.com
+Website: https://unautomated.xyz
+Application: https://app.unautomated.xyz
+
+For technical support, career guidance, and platform updates, visit: https://unautomated.xyz 
